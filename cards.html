@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Karteikarten</title>
-    <link rel="stylesheet" href="cardsstyle.css" />
+    <title>Fazit - Karten</title>
+    <link rel="stylesheet" href="styles/cardsstyle.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -23,7 +23,10 @@
           <div class="d-flex flex-grow-1"></div>
 
           <!-- Logo -->
-          <a class="navbar-brand mx-auto" href="index.html">
+          <a
+            class="navbar-brand position-absolute start-50 translate-middle-x"
+            href="index.html"
+          >
             <img src="assets/fazit_text.png" alt="Logo" width="100" />
           </a>
 
@@ -58,29 +61,69 @@
     <div class="container-fluid">
       <div class="row">
         <!-- Left ThemenList -->
-        <div class="col-md-3 theme-list d-flex flex-column align-items-start">
-          <h5 class="mb-3">Themen</h5>
-          <button type="button" class="btn btn-light active">Allgemein</button>
-          <button type="button" class="btn btn-light">Unternehmen</button>
-          <button type="button" class="btn btn-light">Arbeitsplatz</button>
-          <button type="button" class="btn btn-light">Clientsnetzwerke</button>
-          <button type="button" class="btn btn-light">
-            Schutzbedarfanalyse
-          </button>
-          <button type="button" class="btn btn-light">
-            Verwaltungssoftware
-          </button>
-          <button type="button" class="btn btn-light">Serviceanfragen</button>
+        <div class="col-12 col-md-3 theme-list d-flex flex-column align-items-start">
+          <h5 class="mb-3 d-none d-md-block ms-5">Themen</h5>
+        
+          <!-- Normal List (for big Srceen) -->
+          <div class="d-none d-md-flex flex-column w-100">
+            <button type="button" class="btn btn-light active">Alle</button>
+            <button type="button" class="btn btn-light">Unternehmen</button>
+            <button type="button" class="btn btn-light">Arbeitsplatz</button>
+            <button type="button" class="btn btn-light">Clientsnetzwerke</button>
+            <button type="button" class="btn btn-light">Schutzbedarfanalyse</button>
+            <button type="button" class="btn btn-light">Verwaltungssoftware</button>
+            <button type="button" class="btn btn-light">Serviceanfragen</button>
+          </div>
+        
+          <!-- Dropdown Menu (for mobile) -->
+          <div class="dropdown d-md-none w-100">
+            <button
+              class="btn btn-secondary dropdown-toggle w-100"
+              type="button"
+              id="dropdownMenuButton"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Themen auswählen
+            </button>
+            <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item" href="#">Alle</a></li>
+              <li><a class="dropdown-item" href="#">Unternehmen</a></li>
+              <li><a class="dropdown-item" href="#">Arbeitsplatz</a></li>
+              <li><a class="dropdown-item" href="#">Clientsnetzwerke</a></li>
+              <li><a class="dropdown-item" href="#">Schutzbedarfanalyse</a></li>
+              <li><a class="dropdown-item" href="#">Verwaltungssoftware</a></li>
+              <li><a class="dropdown-item" href="#">Serviceanfragen</a></li>
+            </ul>
+          </div>
         </div>
+        
 
         <!-- Card Part -->
-        <div class="col-md-6 d-flex justify-content-center align-items-center">
+        <div class="col-12 col-md-6">
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">
                 Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                the bulk of the card's content.Some quick example text to build
+                on the card title and make up the bulk of the card's
+                content.Some quick example text to build on the card title and
+                make up the bulk of the card's content.Some quick example text
+                to build on the card title and make up the bulk of the card's
+                content.Some quick example text to build on the card title and
+                make up the bulk of the card's content.Some quick example text
+                to build on the card title and make up the bulk of the card's
+                content.Some quick example text to build on the card title and
+                make up the bulk of the card's content.Some quick example text
+                to build on the card title and make up the bulk of the card's
+                content.Some quick example text to build on the card title and
+                make up the bulk of the card's content.Some quick example text
+                to build on the card title and make up the bulk of the card's
+                content.Some quick example text to build on the card title and
+                make up the bulk of the card's content.Some quick example text
+                to build on the card title and make up the bulk of the card's
+                content.
               </p>
               <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
@@ -88,11 +131,9 @@
         </div>
 
         <!-- Right space -->
-        <div class="col-md-3 right-space"></div>
+        <div class="col-12 col-md-3 right-space"></div>
       </div>
     </div>
-    <main>
-     
-    </main>
+    <main></main>
   </body>
 </html>

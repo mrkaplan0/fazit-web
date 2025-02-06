@@ -1,0 +1,25 @@
+main {
+  margin: auto;
+  /* width: 80%; */
+  padding: 1em;
+  display: inline;
+  justify-content: center;
+}
+
+/* card */
+.card {
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  max-height: 30em;
+  margin: 1em;
+  padding: 1em;
+  display: inline-block;
+  text-align: center;
+}
+.card-text {
+  max-height: 20em;
+  overflow-y: scroll;
+  scrollbar-color: #fbc3d2 #ffffff;
+}
